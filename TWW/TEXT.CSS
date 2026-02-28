@@ -1,0 +1,156 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    line-height:1.7;
+    color:#222;
+}
+
+header {
+    background: #232424;
+    color: #fff;
+    padding:1rem 2rem;
+    position: sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+
+.nav-links {
+    list-style:none;
+    display:flex;
+    
+}
+
+.nav-links li{
+    margin-left:1.5rem;
+}
+
+.nav-links ul, li, a  {
+    display: inline-block;
+    list-style:none;
+    font-size: 1rem;
+    padding:0 10px;
+    margin: 0 20px;
+    color:#fdfdfd;
+    cursor: pointer;
+    position: relative;
+    background: #100f0f;
+    text-decoration: none;
+}
+
+.nav-links ul, li a::after {
+    content:'';
+    width:0;
+    height:3px;
+    background: rgb(4, 245, 169);
+    position:absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+
+.nav-links li, a:hover::after {
+    color: #fbbf24;
+    width:100%;
+}
+
+#hero {
+    height:90vh;
+    background:#03b588;
+    color: #fff;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.btn {
+    background: #1f2937;
+    color:#fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor:pointer;
+    text-decoration: none;
+    transition:0.3s;
+}
+
+.btn:hover {
+    background:#111827;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom:2rem;
+    font-size: 2rem;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:2rem;
+}
+
+.project-card {
+    padding:1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align:center;
+}
+
+.project-card a {
+    display:inline-block;
+    margin-top: 1rem;
+    color: #fbbf24;
+    text-decoration: none
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    max-width:500px;
+    margin:auto;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    
+}
+
+button {
+    background: #fbbf24;
+    border:none;
+    padding:0.8rem;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #eab308;
+}
